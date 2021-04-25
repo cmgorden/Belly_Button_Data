@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body style="background-color:powderblue;">
+<!-- 
+  <div class="container">
+    <div class="row"> -->
+      <!-- <div class="col-md-12 jumbotron text-center">
+      <div style="background-image: url('beef.jpg');
+      background-size: cover; height: 360px; padding-top:80px;opacity: 0.5;">
+        <h1 style=color:purple; style=opacity:1>Belly Button Biodiversity Dashboard</h1>
+        <h2 style=color:black>Use the interactive charts below to explore the dataset</h2> -->
+
+        <div class="jumbotron">
+          <div class="text-center">
+            <div style="background-image: url('beef.jpg');
+      background-size: cover; height: 360px; padding-top:80px;">
+            <h1 style=color:indigo>Belly Button Biodiversity Dashboard</h1>
+            <h2 style=color:white>Use the interactive charts below to explore the dataset</h2>
+
+
+      </div>
+    </div>
+    </div>
+
+    <div class="row">
+      <div class="text-center">
+          <h3>Overview of the Belly Button "Beef" Project</h3>
+          <p> <font size="+1">Are you a vegetarian or vegan who's been craving beef-like hamburgers? Or maybe you've been trying to eat less red meat but you can't give up
+            those delicious hamburgers. A group of scientists at Improbable Beef and a group of trailblazing volunteers is on the job! Bacteria is being used to create 
+            meatless "beef." You read that correctly - bacteria! Improbable Beef is searching for the best bacteria to make delicious meatless meat. They've
+            narrowed down the list of bacteria to those found in the human belly button. Our trailblazing volunteers offered up their bacteria samples and we're
+            anxiously awaiting the results! Check out the information below to find out what kind of bacteria our volunteers have and stay tuned to find what bacteria
+            wins the prize!
+
+          </font></p>
+
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h4>Test Subject ID No.:</h4>
+          <!-- <select id="selDataset"></select> -->
+
+  <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+        <!-- <div>"This is random text" </div> -->
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+<div id="line"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="app.js"></script>
+  <script src="plots.js"></script>
+
+</body>
+
+</html>
